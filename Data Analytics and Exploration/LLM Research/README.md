@@ -1,4 +1,4 @@
-# Retips
+# LLM for Healthcare Data Analysis and Augmentation
 
 To run the code in this repo, you'll need to get a python environment capable of doing that. The two sections below are designed to walk you through the process of creating such a python environment inside an Apptainer, and then running Jupyter Lab inside that Apptainer.
 

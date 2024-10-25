@@ -23,17 +23,14 @@ This project utilized LLMs such as Llama and Chat-GPT4-O to analyze 70,000 patie
 4) Impact: Insights from this analysis led to a 52% improvement in patient satisfaction, influencing targeted interventions to enhance hospital service.
 
 ## Repository Contents
-**Data Analytics and Exploration**: Contains all the core scripts for data preprocessing, model training, and feedback analysis.
-**get_embeddings.py**: Extracts vector embeddings from datasets (CSV/JSON) for use in the RAG framework.
-**make_a_prompt.py**: Generates prompts from the retrieved data to be fed into the large language models.
-**query_for_results.py**: Queries LLMs using the generated prompts and retrieves results based on the input data.
-**notebooks**: Jupyter notebooks for step-by-step walkthroughs of patient feedback analysis, sentiment analysis, and regression models.
+1) **Data Analytics and Exploration**: Contains all the core scripts for data preprocessing, model training, and feedback analysis.
+2) **get_embeddings.py**: Extracts vector embeddings from datasets (CSV/JSON) for use in the RAG framework.
+3) **make_a_prompt.py**: Generates prompts from the retrieved data to be fed into the large language models.
+4) **query_for_results.py**: Queries LLMs using the generated prompts and retrieves results based on the input data.
+5) **notebooks**: Jupyter notebooks for step-by-step walkthroughs of patient feedback analysis, sentiment analysis, and regression models.
 
 ## Prerequisites
-Ensure you have the necessary Python packages installed:
-
-pip install -r requirements.txt
-
+Ensure you have the necessary Python packages installed: pip install -r requirements.txt
 Access to Llama 2 or Chat-GPT4-O via Hugging Face may be required. Please follow the respective documentation for acquiring access tokens and setting up the environment.
 
 ## Getting Started
@@ -43,6 +40,6 @@ To get started with this repository:
 2) Navigate to the project directory and install the dependencies: cd Data-Science-and-LLM; pip install -r requirements.txt
 3) Explore the example scripts in the /src folder or run the provided notebooks in the /notebooks folder to see the data analysis pipeline in action.
 
-Acknowledgments
+### Acknowledgments
 This research was conducted as part of the Healthcare Data Analytics and Exploration work at Clemson University.
 

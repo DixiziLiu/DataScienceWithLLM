@@ -23,9 +23,9 @@ This project utilized LLMs such as Llama and Chat-GPT4-O to analyze 70,000 patie
 4) Impact: Insights from this analysis led to a 52% improvement in patient satisfaction, influencing targeted interventions to enhance hospital service.
 
 ## Repository Contents
-1) **Data Analytics and Exploration**: Contains all the core scripts for data preprocessing, model training, and feedback analysis.
-2) **Healthcare RAG**: RAG Framework development leverages large language models (LLMs) and integrates them with an optimized data retrieval mechanism to aid decision-making in patient safety and operational management.
-3) **LLM Research**: Contains the code and configuration files necessary for setting up and running LLM models inside a containerized environment using Apptainer
+1) Data Analytics and Exploration: Contains all the core scripts for data preprocessing, model training, and feedback analysis.
+2) Healthcare RAG: RAG Framework development leverages large language models (LLMs) and integrates them with an optimized data retrieval mechanism to aid decision-making in patient safety and operational management.
+3) LLM Research: Contains the code and configuration files necessary for setting up and running LLM models inside a containerized environment using Apptainer
 
 ## Prerequisites
 Ensure you have the necessary Python packages installed: pip install -r requirements.txt

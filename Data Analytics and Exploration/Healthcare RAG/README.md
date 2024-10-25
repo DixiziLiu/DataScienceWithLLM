@@ -19,10 +19,10 @@ Given the computational resources required for large-scale text processing and m
 
 **query_for_results.py**: Queries an LLM using the generated prompt to retrieve high-quality, context-aware results. Modify the generated rag_prompt.txt file if necessary, and run the script using "python3 query_for_results.py".
 
-### Prerequisites
+## Prerequisites
 Ensure you have the required Python packages installed via the command "pip install -r requirements.txt". For Llama 2 model use (the default model), please ensure your access through Meta via Hugging Face, and configure your environment accordingly.
 
-### Palmetto Cluster Instructions
+## Palmetto Cluster Instructions
 Follow these steps for running the framework on the Palmetto Cluster:
 
 1) Initiate an interactive job using the command: "qsub -I -l select=1:ncpus=16:ngpus=1:mem=64gb:gpu_model=a100 -l walltime=01:00:00".

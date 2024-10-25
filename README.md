@@ -24,10 +24,8 @@ This project utilized LLMs such as Llama and Chat-GPT4-O to analyze 70,000 patie
 
 ## Repository Contents
 1) **Data Analytics and Exploration**: Contains all the core scripts for data preprocessing, model training, and feedback analysis.
-2) **get_embeddings.py**: Extracts vector embeddings from datasets (CSV/JSON) for use in the RAG framework.
-3) **make_a_prompt.py**: Generates prompts from the retrieved data to be fed into the large language models.
-4) **query_for_results.py**: Queries LLMs using the generated prompts and retrieves results based on the input data.
-5) **notebooks**: Jupyter notebooks for step-by-step walkthroughs of patient feedback analysis, sentiment analysis, and regression models.
+2) **Healthcare RAG**: RAG Framework development.
+3) **LLM Research**: Contains the code and configuration files necessary for setting up and running LLM models inside a containerized environment using Apptainer
 
 ## Prerequisites
 Ensure you have the necessary Python packages installed: pip install -r requirements.txt

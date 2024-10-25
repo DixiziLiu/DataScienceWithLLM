@@ -39,7 +39,7 @@ Access to Llama 2 or Chat-GPT4-O via Hugging Face may be required. Please follow
 ## Getting Started
 To get started with this repository:
 
-1) Clone the repository: git clone https://github.com/yourusername/Data-Science-and-LLM.git
+1) Clone the repository: git clone https://github.com/yourusername/Data-Science-For-LLM.git
 2) Navigate to the project directory and install the dependencies: cd Data-Science-and-LLM; pip install -r requirements.txt
 3) Explore the example scripts in the /src folder or run the provided notebooks in the /notebooks folder to see the data analysis pipeline in action.
 

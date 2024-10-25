@@ -15,7 +15,7 @@ Given the computational resources required for large-scale text processing and m
 ## Core Scripts:
 **get_embeddings.py**: Extracts vector embeddings from a specified dataset (in CSV or JSON format), facilitating the retrieval of relevant documents based on semantic similarity. Use this script with "python3 get_embeddings.py <dataset_path>" and specify the content column relevant to your query.
 
-**create_prompt.py**: Generates a retrieval-augmented prompt based on the extracted embeddings, ready for LLM input. Optionally, you can provide a dataset to tailor the relevance query or manually input the query text. Run it with "python3 create_prompt.py <optional_dataset_path>".
+**make_a_prompt.py**: Generates a retrieval-augmented prompt based on the extracted embeddings, ready for LLM input. Optionally, you can provide a dataset to tailor the relevance query or manually input the query text. Run it with "python3 create_prompt.py <optional_dataset_path>".
 
 **query_for_results.py**: Queries an LLM using the generated prompt to retrieve high-quality, context-aware results. Modify the generated rag_prompt.txt file if necessary, and run the script using "python3 query_for_results.py".
 

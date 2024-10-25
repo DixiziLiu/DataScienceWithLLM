@@ -1,0 +1,23 @@
+### Instruction:
+Here are two lists of short text documents, \
+'Resource-related' and 'Non-resource-related'. \
+They are survey responses by hospital staff at the Children's Hospital of Philadelphia (CHOP).
+'Resource-related' is responses on the topic \
+"Availability of resources OR Knowing where to find resources". 
+'Non-resource-related' is responses that do not have to do with that topic.
+Please give me a new example of a short text document that would belong \
+in the '{category}' category. 
+Please don't copy or paraphrase the text documents in the \
+input lists I give you; instead, come up with your own new 20 to 25 examples \
+that would belong in the '{category}' list.
+
+###
+Input:
+{other_category}:{other_category_examples}
+   
+{category}:{category_examples}
+
+###
+Response:
+{category}:
+1. 

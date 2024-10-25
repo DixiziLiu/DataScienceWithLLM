@@ -1,0 +1,29 @@
+Bootstrap: docker
+From: huggingface/transformers-pytorch-gpu
+
+%help
+	This container is intended to use a pre-built hugging face image and install the
+	python libraries necessary to run LLMs on the cluster.
+
+%post
+	apt-get -y update
+	apt-get -y upgrade
+	pip install --upgrade pip
+	pip install langchain
+	pip install openai	
+	pip install datasets
+	pip install accelerate
+	pip install bitsandbytes
+	pip install jupyterlab
+	python3 -m ipykernel install --user --name llms_env_apptainer --display-name "LLMs Apptainer"
+    
+%runscript
+	echo "The langchain version is `pip freeze | grep langchain`" 
+	echo "The openai version is `pip freeze | grep openai`"
+    echo "The jupyter_core version is `pip list | grep jupyter_core`"
+	python3 -c "import jupyter_core; print(jupyter_core.__file__)"
+    python3 -c "import jupyter_core; print(jupyter_core.__version__)"
+    
+%labels
+	Author cehrett@clemson.edu
+	Version v0.1

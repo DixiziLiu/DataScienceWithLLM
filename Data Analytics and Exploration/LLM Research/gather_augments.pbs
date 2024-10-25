@@ -1,0 +1,8 @@
+#PBS -N RETIPS_gather_augments
+#PBS -l select=1:ncpus=56:mem=250gb:ngpus=1:gpu_model=a100:interconnect=any,walltime=72:00:00
+#PBS -m abe
+#PBS -M cehrett,kwameandre,dixizil
+
+cd $RETIPS_ENV_APPTAINER_PATH/..
+
+apptainer exec --nv -B $HOME:$HOME -B $TMPDIR:$TMPDIR -B /scratch/$USER:/scratch/$USER -B /scratch1/$USER/:/scratch1/$USER environment_apptainer/llms_env.sif python3 gather_augments.py

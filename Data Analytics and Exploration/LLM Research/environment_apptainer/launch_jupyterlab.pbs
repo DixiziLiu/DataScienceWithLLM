@@ -1,0 +1,33 @@
+#PBS -N RETIPS_jupyterlab
+#PBS -l select=1:ncpus=56:mem=250gb:ngpus=1:gpu_model=a100:interconnect=any,walltime=06:00:00
+#PBS -m abe
+#PBS -M cehrett,kwameandre,dixizil
+module load anaconda3/2022.10-gcc cuda/11.2.2-gcc cudnn/8.1.0.77-11.2-gcc
+
+# Go to where the .sif file is
+cd $RETIPS_ENV_APPTAINER_PATH
+
+# Delete the token and node .txt files, if they already exist. That way, as soon as they appear, we know they're fresh.
+rm -f jupyter_url.txt
+rm -f jupyter_node.txt
+
+# Run JupyterLab in the background, redirecting stdout and stderr to a log file
+apptainer exec --nv -B $HOME:$HOME -B $TMPDIR:$TMPDIR -B /scratch/$USER:/scratch/$USER -B /scratch1/$USER/:/scratch1/$USER llms_env.sif jupyter lab --ip=0.0.0.0 --port=8888 --no-browser $RETIPS_ENV_APPTAINER_PATH/.. > jupyter.log 2>&1 &
+
+# Wait a bit for the server to start up
+sleep 10
+
+# Extract the token from the jupyter lab console output
+token=$(grep token jupyter.log | cut -d'=' -f2 | head -n 1)
+
+# Construct the URL string with the extracted token and write it to a file
+echo "http://localhost:8001/lab?token=$token" > jupyter_url.txt
+
+# Extract the node where the jupyter lab server is running
+grep http://node jupyter.log | cut -d'/' -f3 | cut -d'.' -f1 | head -n 1 > jupyter_node.txt
+
+# Keep the script running as long as the Jupyter Lab process is running
+while pgrep -x "jupyter-lab" > /dev/null
+do
+    sleep 10
+done

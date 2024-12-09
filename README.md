@@ -2,7 +2,7 @@
 
 This repository contains the work and methods developed during research projects aimed at leveraging data science techniques and large language models (LLMs) to explore healthcare incident reports and patient feedback. The projects focus on uncovering actionable insights to improve patient safety, operational efficiency, and service quality in healthcare institutions.
 
-## Project 1: Explore Stories Beyond Healthcare Incident Reports
+## Project 1: Large Language Models for Scaling up Proactive Learning in Healthcare
 
 This project integrates Retrieval-Augmented Generation (RAG) techniques and LLMs to retrieve and analyze data from 500 narratives and 70 million healthcare incident reports. The primary goal is to enhance decision-making support for hospital managers by optimizing large language models for patient safety and operational management.
 

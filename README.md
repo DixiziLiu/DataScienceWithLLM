@@ -40,5 +40,5 @@ To get started with this repository:
 3) Explore the example scripts in the /src folder or run the provided notebooks in the /notebooks folder to see the data analysis pipeline in action.
 
 ### Acknowledgments
-This research was conducted as part of the Healthcare Data Analytics and Exploration work at Clemson University.
+This research was conducted as a part of the Healthcare Data Analytics and Exploration work at Clemson University.
 

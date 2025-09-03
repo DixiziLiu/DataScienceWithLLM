@@ -1,4 +1,4 @@
-# Data Science and Large Language Models (LLM) for Healthcare Analytics
+# Data Science and Large Language Models (LLMs) for Healthcare Improvement Analytics
 
 This repository contains the work and methods developed during research projects aimed at leveraging data science techniques and large language models (LLMs) to explore healthcare incident reports and patient feedback. The projects focus on uncovering actionable insights to improve patient safety, operational efficiency, and service quality in healthcare institutions.
 
